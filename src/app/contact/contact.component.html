@@ -1,0 +1,115 @@
+<div class="container-fluid contact-container">
+    <div class="col-lg-1">
+      &nbsp;
+    </div>
+    <div class="col-lg-5 col-md-5 col-xs-12">
+		<!-- <div class="col-lg-12 address-book"> -->
+			<div class="col-xs-12 col-md-12 col-lg-12 address-book contact-india">
+				<span class="col-xs-12 col-md-12 col-lg-12 border-bottom">
+					<label>
+						INDIA
+					</label>
+				</span>
+				<span class="col-xs-12 col-md-12 col-lg-12">
+				<label>
+					Azruti
+				</label>
+				</span>
+				<span class="col-xs-12 col-md-12 col-lg-12">
+				<label>
+					Coimbatore
+				</label>
+				</span>
+				<span class="col-xs-12 col-md-12 col-lg-12">
+				<label>
+					989898989898989
+				</label>
+				</span>
+				<span class="col-xs-12 col-md-12 col-lg-12">
+				<label>
+					azruti@gmail.com
+				</label>
+				</span>
+				<span class="col-xs-12 col-md-12 col-lg-12 border-bottom" style="border-top: 1px solid gray">
+					<label>
+						Nigeria
+					</label>
+				</span>
+				<span class="col-xs-12 col-md-12 col-lg-12">
+					<label>
+						Azruti
+					</label>
+				</span>
+				<span class="col-xs-12 col-md-12 col-lg-12">
+					<label>
+						Nigeria
+					</label>
+				</span>
+				<span class="col-xs-12 col-md-12 col-lg-12">
+					<label>
+						989898989898989
+					</label>
+				</span>
+				<span class="col-xs-12 col-md-12 col-lg-12">
+					<label>
+						azruti@gmail.com
+					</label>
+				</span>
+			</div>
+		<!-- </div> -->
+		<div class="col-lg-12">
+			&nbsp;
+		</div>
+	</div>
+	<div class="col-lg-1">
+		&nbsp;
+	</div>
+	<div class="col-lg-5 col-md-5 col-xs-12 enquiry-form-container">
+		<span class="col-lg-12 c0l-md-12 col-xs-12 text-center">
+			<h4> Enquiry Form </h4>
+		</span>
+		<form class="form-horizontal" [name]="enquiryForm">
+			<div class="form-group">
+				<label for="firstName" class="control-label">Name <span class="required">*</span></label>
+				<div class="">
+					<input name="name" class="form-control" required minlength="4" 
+						[(ngModel)]="contactModel.name" #name="ngModel" >
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="firstName" class="control-label">Contact Number <span class="required">*</span></label>
+				<div class="">
+					<input name="number" class="form-control" required minlength="4" 
+						[(ngModel)]="contactModel.number" #name="ngModel" >
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="firstName" class="control-label">Email Id <span class="required">*</span> </label>
+				<div class="">
+					<input name="email" class="form-control" required minlength="4" 
+						[(ngModel)]="contactModel.email" #name="ngModel" >
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="firstName" class="control-label">City <span class="required">*</span> </label>
+				<div>
+					<input name="city" class="form-control" required minlength="4" 
+						[(ngModel)]="contactModel.city" #name="ngModel" >
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="firstName" class="control-label">Message <span class="required">*</span> </label>
+				<div>
+					<input name="msg" class="form-control"  minlength="4" 
+						[(ngModel)]="contactModel.msg" #name="ngModel" />
+				</div>
+			</div>
+			<div class="form-group text-center">
+				<input [type]="button" value="Submit" [disabled]="false" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+	<!-- <div class="col-lg-1">
+		&nbsp;
+	</div> -->
+  </div>

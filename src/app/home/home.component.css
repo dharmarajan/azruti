@@ -1,0 +1,50 @@
+.img-slide {
+    /* position: absolute;  */
+    left: 0px; 
+    top: 0px; 
+    width: 100%; 
+    height: 552px; 
+    z-index: 10; 
+    background: rgb(255, 255, 255); 
+    /* opacity: 0; */
+}
+
+.leftRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    border-radius: 999px;
+    left: 0;
+    cursor: pointer;
+}
+
+.rightRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    border-radius: 999px;
+    right: 0;
+    cursor: pointer;
+}
+
+.hyper-txt {
+    color: red;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -25px; 
+    cursor: pointer;
+    font-size: 38px;
+    font-weight: 700;
+}

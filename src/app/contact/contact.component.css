@@ -1,0 +1,28 @@
+.contact-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.contact-india {
+    border: 1px solid gray;
+    box-shadow: 5px 10px;
+}
+.border-bottom {
+    border-bottom: 1px solid gray;
+}
+
+.address-book {
+    line-height: 47px;
+    padding: 2px;
+}
+
+.enquiry-form-container {
+    border: 1px solid gray;
+    box-shadow: 5px 10px;
+    padding: 28px;
+}
+
+.required{
+    color:red;
+}

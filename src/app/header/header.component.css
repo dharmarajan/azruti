@@ -1,0 +1,109 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+
+.mat-drawer {
+  background-color: rgb(102, 102, 102);
+}
+
+.mat-nav-list .mat-list-item {
+  color:#FDFDF9;
+}
+
+.example-is-mobile .example-toolbar1 {
+  /* position: fixed; */
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+.nav-icon {
+  margin: -2px 7px 0px 5px;
+}
+
+.nav-element {
+  font-size: 14px;
+}
+
+
+
+/* Glowing */
+body {
+  background: black;
+}
+.button {
+  /* background-color: #004A7F; */
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #0c7ed0; -webkit-box-shadow: 0 0 3px #0c7ed0; }
+  50% { background-color: #004A7F; -webkit-box-shadow: 0 0 40px #004A7F; }
+  100% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #0c7ed0; -moz-box-shadow: 0 0 3px #0c7ed0; }
+  50% { background-color: #004A7F; -moz-box-shadow: 0 0 40px #004A7F; }
+  100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #0c7ed0; box-shadow: 0 0 3px #0c7ed0; }
+  50% { background-color: #004A7F; box-shadow: 0 0 40px #004A7F; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+}
+
+@keyframes glowing {
+  0% { background-color: #0c7ed0; box-shadow: 0 0 3px #0c7ed0; }
+  50% { background-color: #004A7F; box-shadow: 0 0 40px #004A7F; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+}
+
+.button {
+  -webkit-animation: glowing 2500ms 10;
+  -moz-animation: glowing 2500ms 10;
+  -o-animation: glowing 2500ms 10;
+  animation: glowing 2500ms 10;
+}
+
+.mat-icon {
+  margin-top: -12px !important;
+}

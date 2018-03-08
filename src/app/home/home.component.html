@@ -1,0 +1,18 @@
+<ngx-carousel
+[inputs]="carouselOne"
+(carouselLoad)="myfunc($event)">
+  <ngx-item NgxCarouselItem>
+      <img src="assets\img\img1.jpg" class="img-slide">
+      <a class="hyper-txt"> Dress One </a>
+  </ngx-item>
+  <ngx-item NgxCarouselItem>
+      <img src="assets\img\img2.jpg" class="img-slide">
+      <a class="hyper-txt"> Today Offer </a>
+  </ngx-item>
+  <ngx-item NgxCarouselItem>
+      <img src="assets\img\img3.jpg" class="img-slide">
+      <a class="hyper-txt"> Hurry !!! </a>
+  </ngx-item>
+  <button NgxCarouselPrev class='leftRs'>&lt;</button>
+  <button NgxCarouselNext class='rightRs'>&gt;</button>
+</ngx-carousel> 
